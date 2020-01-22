@@ -15,8 +15,10 @@ func max(before int, after int) int {
 }
 
 func main() {
-	var dp []int
-	var num []int
+	var dp [100][10000]int
+	var num [100]int
+	var weight [100]int
+	var value [100]int
 
 	n := 2
 	rand.Seed(time.Now().UnixNano())

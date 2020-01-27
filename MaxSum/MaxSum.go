@@ -17,12 +17,13 @@ func max(before int, after int) int {
 func main() {
 	var dp []int
 	var num []int
+	var number int
 
 	n := 2
 	rand.Seed(time.Now().UnixNano())
 
 	for i := 0; i < n; i++ {
-		number := 10 - rand.Intn(20)
+		fmt.Scanf("%d", &number)
 		num = append(num, number)
 	}
 
@@ -33,4 +34,3 @@ func main() {
 
 	fmt.Println(num, dp[n])
 }
-
